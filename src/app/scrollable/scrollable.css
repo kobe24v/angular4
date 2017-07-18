@@ -1,0 +1,60 @@
+ul {
+  list-style: none;
+  position: fixed;
+  left: 0;
+  top: 50px;
+}
+
+ul li {
+  clear: both;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ECEEEF;
+  color: #666;
+  text-align: center;
+}
+
+ul li.current {
+  background: #ffffff;
+  color: #666;
+  border-top:1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.scrollable {
+  height: auto;
+  border: 1px solid #999;
+  position: relative;
+}
+
+.scrollable > div {
+  height: 1000px
+}
+
+.scrollable > div:nth-child(odd) {
+  background-color: #ccc
+}
+
+.scrollable.section {
+  overflow: auto;
+}
+
+.horizontal {
+  height: 100px;
+  width: 100%;
+  max-width: 450px;
+  white-space: nowrap;
+  overflow-y: hidden !important;
+}
+
+.horizontal > div {
+  border: 1px solid #666;
+  width: 200px;
+  height: 80px;
+  display: inline-block;
+  text-align: center;
+}
+
+.list-tab {
+
+}

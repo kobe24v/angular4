@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-lg-3">
+    <ul class="list-tab col-lg-3">
+      <li *ngFor="let num of [1,2,3,4,5,6,7,8,9,10]"
+          [class.current]="wid == 'w'+ num "
+          (click)="scrollTo('#w'+num)">{{num}}</li>
+    </ul>
+  </div>
+  <div class="scrollable window col-lg-9"
+       (elementVisible)="wid = $event.id"
+       (elementHidden)="whid = $event.id"
+       ngui-scrollable>
+    <div id="w1">One</div>
+    <div id="w2">Two</div>
+    <div id="w3">Three</div>
+    <div id="w4">Four</div>
+    <div id="w5">Five</div>
+    <div id="w6">Six</div>
+    <div id="w7">Seven</div>
+    <div id="w8">Eight</div>
+    <div id="w9">Nine</div>
+    <div id="w10">Ten</div>
+  </div>
+</div>
+

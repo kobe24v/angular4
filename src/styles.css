@@ -1,0 +1,4 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "css/icon.css";
+@import "css/bootstrap4.css";
+@import "../node_modules/angular2-busy/build/style/busy.css";
